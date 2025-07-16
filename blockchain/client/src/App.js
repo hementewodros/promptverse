@@ -4,7 +4,7 @@ import { readCount, incrementCounter, getContract } from "./utils/web3Utils";
 const App = () => {
   const [count, setCount] = useState("Loading...");
   const [loading, setLoading] = useState(false);
-
+  
   const fetchCount = async () => {
     try {
       const value = await readCount();
