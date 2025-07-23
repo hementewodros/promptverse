@@ -1,25 +1,105 @@
-# React + Vite
+# 🗳️ PromptVerse – A Web3-Powered Prompt Voting Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PromptVerse is a decentralized application (dApp) that lets users **submit**, **vote**, and **track creative prompts** on the Ethereum blockchain. Built in 30 days as part of a build sprint, it demonstrates the core mechanics of a full-stack Web3 platform using smart contracts, React, and Ethers.js.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live on Sepolia Testnet
 
-## Expanding the ESLint configuration
+**Smart Contract Address:**  
+[`0x5B6FfDa31d9E36Dd3532F380Ed0cADd1BD23B5ca`](https://sepolia.etherscan.io/address/0x5B6FfDa31d9E36Dd3532F380Ed0cADd1BD23B5ca)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Sample Hardhat Project
+---
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+## ✨ Features
 
-Try running some of the following tasks:
+- ✅ Connect Wallet with MetaMask  
+- ✅ Add New Proposals (Creative Prompts)  
+- ✅ Vote on Existing Proposals  
+- ✅ Track Vote Count in Real-Time  
+- ✅ Event Listener for Counter Demo  
+- ⏳ Prompt NFT Minting (Coming Soon)  
+- ⏳ Reputation and Creator Reward System (Coming Soon)
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+---
+
+## 🛠️ Tech Stack
+
+| Layer            | Technology                |
+|------------------|---------------------------|
+| **Frontend**     | React, Ethers.js          |
+| **Smart Contract** | Solidity, Hardhat       |
+| **Blockchain**   | Ethereum Sepolia Testnet  |
+| **Wallet**       | MetaMask                  |
+
+---
+
+## 📁 Project Structure
+promptverse/ ├── blockchain/              # Solidity contracts & deployment scripts │   └── contracts/           # Counter.sol smart contract │   └── scripts/             # Deployment script │   └── artifacts/           # ABI output after compile │ ├── client/                  # Frontend React app │   └── components/          # ProposalForm.js, ProposalList.js │   └── utils/               # web3Utils.js for contract interaction │   └── constants/           # contractABI and contractAddress │   └── App.js               # Main UI logic
+
+---
+
+## 🔧 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/promptverse.git
+cd promptverse
+
+2. Install dependencies
+
+cd blockchain
+npm install
+
+cd ../client
+npm install
+
+3. Compile and Deploy Smart Contract
+
+Set your .env file in /blockchain with your private key and RPC URL.
+
+npx hardhat compile
+npx hardhat run scripts/deploy.js --network sepolia
+
+> Make sure to fund your wallet with Sepolia ETH via https://sepoliafaucet.com
+
+
+
+4. Run the Frontend
+
+cd client
+npm start
+
+Then go to http://localhost:3000
+
+
+---
+
+🧠 Project Vision
+
+PromptVerse is the first step toward a decentralized prompt economy — enabling users to submit ideas, vote democratically, and potentially earn rewards via smart contracts. Future features may include:
+
+Prompt NFTs with resale royalties
+
+AI prompt marketplaces
+
+DAO-based creative curation
+
+Token-gated voting or tiers
+
+
+
+---
+
+📬 Contributing & Feedback
+
+Contributions are welcome. Feel free to fork, open issues, or submit PRs.
+
+
+---
+
+📝 License
+
+MIT License
+© 2025 PromptVerse
