@@ -44,7 +44,7 @@ promptverse/ ├── blockchain/              # Solidity contracts & deploymen
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/promptverse.git
+git clone https://hemen-tewodros/promptverse.git
 cd promptverse
 
 2. Install dependencies
