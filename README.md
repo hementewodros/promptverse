@@ -6,7 +6,7 @@ PromptVerse is a decentralized application (dApp) that lets users **submit**, **
 
 ## 🚀 Live on Sepolia Testnet
 
-**Smart Contract Address:**  
+**Smart Contract Address:**  (Not Updated)
 [`0x5B6FfDa31d9E36Dd3532F380Ed0cADd1BD23B5ca`](https://sepolia.etherscan.io/address/0x5B6FfDa31d9E36Dd3532F380Ed0cADd1BD23B5ca)
 
 ---
